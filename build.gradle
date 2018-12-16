@@ -17,7 +17,7 @@ apply plugin: 'io.spring.dependency-management'
 
 group = 'by.naxa.youtrack'
 version = '1.0'
-sourceCompatibility = 11
+sourceCompatibility = 9
 
 repositories {
     mavenCentral()
