@@ -14,4 +14,8 @@ public interface FacultyRepository extends JpaRepository<Faculty, Long> {
 
     List<Faculty> findByStudentsEmpty();
 
+    List<Faculty> findAllByStudentsIsNotEmpty();
+
+    List<Faculty> findByStudentsNotEmpty();
+
 }

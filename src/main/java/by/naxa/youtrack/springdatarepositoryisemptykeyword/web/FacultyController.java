@@ -21,6 +21,11 @@ public class FacultyController {
         return repository.findAllByStudentsIsEmpty();
     }
 
+    @GetMapping("/haveStudents")
+    public List<Faculty> listFacultiesWithStudents() {
+        return repository.findAllByStudentsIsNotEmpty();
+    }
+
     @GetMapping
     public List<Faculty> listFaculties() {
         return repository.findAll();
